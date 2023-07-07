@@ -14,7 +14,6 @@ namespace EntityFCore.Entidades
 
         public string Ciudad { get; set; }
 
-        public int PersonaId { get; set; }//Esto representa una clave foránea
         public Persona? Persona { get; set; }//creará la relación con la tabla Afp
     }
 }

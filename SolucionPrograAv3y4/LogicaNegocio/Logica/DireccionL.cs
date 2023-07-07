@@ -12,6 +12,7 @@ namespace LogicaNegocio.Logica
 {
     public class DireccionL : IDireccion
     {
+
         private MyDbContext _context;
 
         public DireccionL(MyDbContext context)
@@ -25,7 +26,7 @@ namespace LogicaNegocio.Logica
 
         public async Task<IReadOnlyList<Direccion>> GetDirecciones()
         {
-            return await _context.Direccion.Include(t=>t.Persona).ToListAsync();
+            return await _context.Direccion.ToListAsync();
         }
 
 
