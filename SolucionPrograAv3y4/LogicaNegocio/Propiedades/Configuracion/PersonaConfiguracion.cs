@@ -23,6 +23,8 @@ namespace LogicaNegocio.Propiedades.Configuracion
             builder.Property(p => p.Correo).IsRequired().HasMaxLength(250);
 
 
+            builder.Property(p => p.Sueldo).IsRequired().HasMaxLength(250);
+
 
             builder.Property(p => p.Imagen).HasMaxLength(1000);
 

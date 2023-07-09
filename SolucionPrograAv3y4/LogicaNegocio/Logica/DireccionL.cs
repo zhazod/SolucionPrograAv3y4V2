@@ -21,7 +21,7 @@ namespace LogicaNegocio.Logica
         }
         public async Task<Direccion> GetDireccionById(int id)
         {
-            return await _context.Direccion.Include(t=>t.Persona).FirstOrDefaultAsync(t=>t.Id==id); 
+            return await _context.Direccion.FirstOrDefaultAsync(t=>t.Id==id); 
         }
 
         public async Task<IReadOnlyList<Direccion>> GetDirecciones()

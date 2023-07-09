@@ -29,7 +29,7 @@ namespace LogicaNegocio.Logica
 
         public async Task<IReadOnlyList<Persona>> GetPersonas()
         {
-            return await _context.Persona.ToListAsync();
+            return await _context.Persona.Include(t => t.Direccion).ToListAsync();
         }
 
 

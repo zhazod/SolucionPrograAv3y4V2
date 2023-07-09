@@ -14,6 +14,6 @@ namespace EntityFCore.Entidades
 
         public string Ciudad { get; set; }
 
-        public Persona? Persona { get; set; }//creará la relación con la tabla Afp
+        
     }
 }
