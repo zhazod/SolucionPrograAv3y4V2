@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import { getPersonas } from '../../Acciones/PersonaAcciones';
 import misEstilos from '../../estilos/misestilos';  
 
-
-
 const Personas = (props) => {
 
   const [paginadorPersonas, setPaginadorPersonas] = useState({
@@ -57,7 +55,7 @@ const Personas = (props) => {
                 <Typography variant="h6" className={clases.nombre}>
                   {data.nombre} {data.apellido}
                 </Typography>
-                <Button variant="contained" color="primary" fullWidth>
+                <Button variant="contained" color="primary" onClick={()=>editarPersona(data.id)} fullWidth >
                   Mas Detalles
                 </Button>
               </CardContent>

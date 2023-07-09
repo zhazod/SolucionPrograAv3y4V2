@@ -1,6 +1,6 @@
 import { Button, Container, Grid,Typography,Icon,TableContainer,Table,TableHead,TableRow,TableCell,TableBody } from '@material-ui/core';
 import React, {useEffect, useState} from 'react';
-import { borrarPersona, getPersonas } from '../../Acciones/PersonaAcciones';
+import { borrarPersona, getPersonas } from '../../Acciones/PersonaAcciones'
 import misEstilos from '../../estilos/misestilos';
 
 

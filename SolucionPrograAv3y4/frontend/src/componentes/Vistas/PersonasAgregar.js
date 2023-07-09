@@ -13,9 +13,10 @@ const PersonasAgregar = () =>{
         nombre:'',
         apellido:'',
         correo:'',
+        sueldo:0, 
         imagen:'',
         file: '',
-        direccionId:0
+        direccionId:0,
     });
 
     const [direccion, setDireccion] = React.useState("");
@@ -48,6 +49,8 @@ const PersonasAgregar = () =>{
     const clases = misEstilos();
     const KeyImage=uuidv4();
 
+    
+
     return(
 
         <Container className={clases.containermt}>
@@ -74,6 +77,8 @@ const PersonasAgregar = () =>{
                         
                         <TextField label="Sueldo" variant="outlined" className={clases.gridmb} fullWidth InputLabelProps={{shrink:true,}}
                         name="sueldo" value={persona.sueldo} onChange={handleChange}/>
+
+                        
                         <FormControl className={clases.formControl} fullWidth>
                             <InputLabel id="marca-select-label">Direccion</InputLabel>
                             <Select labelId="marca-select-label" id="marcaselect" value={direccion} onChange={handleDireccionChange}>
