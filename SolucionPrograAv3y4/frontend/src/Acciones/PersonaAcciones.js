@@ -3,6 +3,7 @@ import { uploadImage } from "../firebase";
 
 
 export const actualizarPersona= async (id, persona) => {
+  console.log('datos de la persona:', persona);
   if (persona.file) {
     const urlImage = await uploadImage(persona.file);
     persona.imagen = urlImage;
